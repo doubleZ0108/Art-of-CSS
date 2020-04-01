@@ -1,0 +1,78 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #222;
+
+    /*center in all direction*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/*spotlight*/
+.spotlight {
+    color: #333;
+    font-family: Helvetica, serif;
+    margin: 0;
+    padding: 0;
+    font-size: 8rem;
+    letter-spacing: -0.3rem;
+    position: relative;
+}
+
+/*pseudo element*/
+.spotlight::after{
+    content: attr(data-spotlight);
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /*circle mask*/
+    clip-path: ellipse(100px 100px at 0% 50%);
+    -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+
+    animation: spotlight 5s infinite;
+
+    /*background mask*/
+    background-image: linear-gradient(to right, yellow, yellowgreen, greenyellow, lightseagreen, green);
+    background-size: 150%;
+    background-position: center center;
+    -webkit-background-clip: text;
+}
+
+@keyframes spotlight {
+    0% {
+        clip-path: ellipse(100px 100px at 0% 50%);
+        -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+    }
+
+    50%{
+        clip-path: ellipse(100px 100px at 100% 50%);
+        -webkit-clip-path: ellipse(100px 100px at 100% 50%);
+    }
+
+    100% {
+        clip-path: ellipse(100px 100px at 0% 50%);
+        -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+    }
+}
+
+
+.flex-clear{
+    flex: 1;
+}
+
+footer{
+    text-align: center;
+}
+
+label{
+    color: yellowgreen;
+    font-weight: bold;
+    font-family: Monospaced, serif;
+    display: block;
+}
