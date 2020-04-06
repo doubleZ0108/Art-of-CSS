@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text {
+    text-transform: uppercase;
+}
+
+.btn {
+    width: 200px;
+    height: 60px;
+    margin: 40px 0;
+    background-color: lightblue;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.box {
+    width: 240px;
+    height: 200px;
+    background-color: cadetblue;
+    margin: 0 auto;
+}
+
+.text:hover{
+    animation: rubberBandAnimation 1s;
+}
+
+.btn:hover{
+    animation: rubberBandAnimation 1s;
+}
+
+.box:hover{
+    animation: rubberBandAnimation 1s;
+}
+
+@keyframes rubberBandAnimation {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    35% {
+        transform: scale3d(1.25, .75, 1);
+    }
+    45% {
+        transform: scale3d(.75, 1, 1);
+    }
+    60% {
+        transform: scale3d(1.2, .8, 1);
+    }
+    75% {
+        transform: scale3d(1.05, .95, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
