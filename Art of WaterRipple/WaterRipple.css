@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #040d15;
+}
+
+a.water-ripple {
+    position: relative;
+    display: inline-block;;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #0162c8, #55e7fc);
+}
+
+a.water-ripple:nth-child(2) {
+    background: linear-gradient(90deg, #755bea, #ff72c0);
+}
+
+a.water-ripple span {
+    position: absolute;;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: WaterRippleAnimation 1s linear infinite;
+}
+
+@keyframes WaterRippleAnimation {
+    0%{
+        width: 0px;
+        height: 0px;
+        opacity: 0.3;
+    }
+    75%{
+        width: 500px;
+        height: 500px;
+        opacity: 0.3;
+    }
+    100%{
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
