@@ -12,6 +12,7 @@ body {
     text-align: center;
 }
 
+/*============== global通用 =====================*/
 .icons {
     display: flex;
     margin: 40px 0;
@@ -34,7 +35,29 @@ body {
     color: #b6bbc5;
 }
 
-.second li a {
+li:nth-child(1).fill-color a{
+    color: #696867;
+}
+li:nth-child(2).fill-color a{
+    color: #1da1f2;
+}
+li:nth-child(3).fill-color a{
+    color: #09bb07;
+}
+li:nth-child(4).fill-color a{
+    color: #333;
+}
+
+/*============================================*/
+
+/* circle版的样式都在li上 */
+.circle li.clicked {
+    box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+/* ring版特殊样式在a上 */
+.ring li a {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,11 +67,10 @@ body {
     line-height: 55px;
     border-radius: 50%;
     font-size: 24px;
-    box-shadow: inset -3px -3px 7px #ffffff73,
+    box-shadow: inset -3px -3px 7px #ffffff73,          /* 绝对定位logo 裁出来一个洞*/
                 inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
-.first li.shadow-1 {
-    box-shadow: inset -3px -3px 7px #ffffff73,
-    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+.ring li a.clicked {
+    box-shadow: none;
 }
