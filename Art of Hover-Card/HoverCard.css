@@ -38,7 +38,7 @@ body {
     width: 100%;
     transition: 0.3s linear;
 }
-.card:hover .image img {
+.card:active .image img {
     opacity: 0.6;
     transform: scale(1.1);
 }
@@ -88,4 +88,8 @@ body {
 .bottom button:hover {
     transform: scale(0.9);
     background-color: #e64533;
+}
+
+.bottom {
+    display: none;
 }
