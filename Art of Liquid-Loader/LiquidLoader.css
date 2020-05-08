@@ -16,6 +16,10 @@ svg {
     height: 0;
 }
 
+.container {
+    position: relative;
+}
+
 .loader {
     position: relative;
     width: 200px;
@@ -52,4 +56,36 @@ svg {
     50%, 100% {
         transform: rotate(360deg);
     }
+}
+
+.bar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 50px;
+    width: 200px;
+    background: linear-gradient(#fce4ec, #03a9f4);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 50px;      /* line-height和height相同可实现div中文字水平居中 */
+    transition: 0.8s cubic-bezier(0.2,0.8,0.2,1);
+    transform: translateY(-125px);
+    filter: none;
+}
+
+.bar-hovered {
+    transform: translateY(-125px) scaleY(3) scaleX(1.2);
+}
+
+
+.text {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transform: translateY(75px);
 }
