@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #010b01;
+}
+
+svg {
+    width: 0;
+    height: 0;
+}
+
+.loader {
+    position: relative;
+    width: 100%;
+}
+
+.liquid {
+    position: relative;
+    width: 80%;     /* 想控制范围调整这个就好了 */
+    height: 100px;
+    margin: auto;
+    filter: url(#gooey);
+}
+
+.liquid span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    animation: LiquidliquidAnimation 4s ease-in-out infinite;
+    animation-delay: calc(0.2s * var(--i));
+}
+.liquid span:before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 20px - 1.5px*var(--i));
+    left: 0;
+    width: calc(30px + 3px*var(--i));
+    height: calc(30px + 3px*var(--i));
+    border-radius: 50%;
+    box-shadow: 0 0 30px #03a9f4;
+    background: linear-gradient(#fce4ec, #03a9f4);
+}
+
+.liquid span:nth-child(1){
+    --i: 1;
+}
+.liquid span:nth-child(2){
+    --i: 2;
+}
+.liquid span:nth-child(3){
+    --i: 3;
+}
+.liquid span:nth-child(4){
+    --i: 4;
+}
+.liquid span:nth-child(5){
+    --i: 5;
+}
+.liquid span:nth-child(6){
+    --i: 6;
+}
+.liquid span:nth-child(7){
+    --i: 7;
+}
+
+.liquid span:nth-child(1):before{
+    --i: 1;
+}
+.liquid span:nth-child(2):before{
+    --i: 2;
+}
+.liquid span:nth-child(3):before{
+    --i: 3;
+}
+.liquid span:nth-child(4):before{
+    --i: 4;
+}
+.liquid span:nth-child(5):before{
+    --i: 5;
+}
+.liquid span:nth-child(6):before{
+    --i: 6;
+}
+.liquid span:nth-child(7):before{
+    --i: 7;
+}
+
+@keyframes LiquidliquidAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    45%,55% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
