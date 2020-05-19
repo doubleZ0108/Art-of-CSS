@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightcoral;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    position: relative;
+    transition: .5s;
+}
+
+.container .text {
+    font-size: 120px;
+    line-height: 120px;
+    height: 120px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.container .text:nth-child(1) {
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+
+.container .text:nth-child(3) {
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+    transition: .5s;
+}
+
+.container .inner-text {
+    height: 0px;
+    overflow: hidden;
+    position: absolute;
+    transition: scale(1,0);
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    line-height: 70px;
+    transition: .5s;
+}
+
+.container:hover {
+    height: 190px;
+}
+
+.container:hover .inner-text {
+    height: 70px;
+    transition: scale(1,1);
+}
+
+.container:hover .text:nth-child(3) {
+    top: 80px;
+}
