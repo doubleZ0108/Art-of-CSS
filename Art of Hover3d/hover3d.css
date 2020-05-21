@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    height: 300px;
+    transition: .5s cubic-bezier(0.2,0.8,0.2,1);
+}
+
+.card img {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .5s cubic-bezier(0.2,0.8,0.2,1);
+}
