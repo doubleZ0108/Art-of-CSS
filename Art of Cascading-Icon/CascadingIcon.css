@@ -25,6 +25,7 @@ ul li {
     height: 60px;
     margin: 0 10px;
 }
+
 ul li:before {
     content: '';
     position: absolute;
@@ -36,6 +37,7 @@ ul li:before {
     transform-origin: top;
     transform: skewX(-41deg);
 }
+
 ul li:after {
     content: '';
     position: absolute;
@@ -58,7 +60,7 @@ ul li i {
     justify-content: center;;
     align-items: center;
     background-color: #333;
-    color: rgba(255,255,255,0.2);
+    color: rgba(255, 255, 255, 0.2);
     font-size: 30px !important;
     transition: 0.2s;
 }
@@ -67,25 +69,29 @@ ul li:hover i {
     z-index: 1000;
     transition: 0.5s;
     color: #fff;
-    box-shadow: -1px 1px 1px rgba(0,0,0,0.5);
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 ul li:hover i:nth-child(5) {
     transform: translate(40px, -40px);
     opacity: 1;
 }
+
 ul li:hover i:nth-child(4) {
     transform: translate(30px, -30px);
     opacity: 0.8;
 }
+
 ul li:hover i:nth-child(3) {
     transform: translate(20px, -20px);
     opacity: 0.6;
 }
+
 ul li:hover i:nth-child(2) {
     transform: translate(10px, -10px);
     opacity: 0.4;
 }
+
 ul li:hover i:nth-child(1) {
     transform: translate(0px, 0px);
     opacity: 0.2;
@@ -94,15 +100,19 @@ ul li:hover i:nth-child(1) {
 ul li:nth-child(1):hover i {
     background-color: #696867;
 }
+
 ul li:nth-child(2):hover i {
     background-color: #09bb07;
 }
+
 ul li:nth-child(3):hover i {
     background-color: #1da1f2;
 }
+
 ul li:nth-child(4):hover i {
     background-color: #333;
 }
+
 ul li:nth-child(5):hover i {
     background-color: #1761f2;
 }

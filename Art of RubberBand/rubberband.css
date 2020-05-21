@@ -33,15 +33,15 @@ body {
     margin: 0 auto;
 }
 
-.text:hover{
+.text:hover {
     animation: rubberBandAnimation 1s;
 }
 
-.btn:hover{
+.btn:hover {
     animation: rubberBandAnimation 1s;
 }
 
-.box:hover{
+.box:hover {
     animation: rubberBandAnimation 1s;
 }
 

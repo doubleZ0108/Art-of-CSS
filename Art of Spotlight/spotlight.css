@@ -1,4 +1,4 @@
-body{
+body {
     padding: 0;
     margin: 0;
     background-color: #222;
@@ -24,7 +24,7 @@ body{
 }
 
 /*pseudo element*/
-.spotlight::after{
+.spotlight::after {
     content: attr(data-spotlight);
     color: transparent;
     position: absolute;
@@ -50,7 +50,7 @@ body{
         -webkit-clip-path: ellipse(100px 100px at 0% 50%);
     }
 
-    50%{
+    50% {
         clip-path: ellipse(100px 100px at 100% 50%);
         -webkit-clip-path: ellipse(100px 100px at 100% 50%);
     }
@@ -62,15 +62,15 @@ body{
 }
 
 
-.flex-clear{
+.flex-clear {
     flex: 1;
 }
 
-footer{
+footer {
     text-align: center;
 }
 
-label{
+label {
     color: yellowgreen;
     font-weight: bold;
     font-family: Monospaced, serif;

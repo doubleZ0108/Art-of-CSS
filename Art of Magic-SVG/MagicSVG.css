@@ -34,9 +34,11 @@ body {
     stroke-dasharray: 1560;
     stroke-dashoffset: 0;
 }
+
 .container .icon.heart:hover path {
     animation: animation-heart 2s linear forwards;
 }
+
 @keyframes animation-heart {
     0% {
         stroke-dashoffset: 0;
@@ -58,9 +60,11 @@ body {
     stroke-dasharray: 1810;
     stroke-dashoffset: 0;
 }
+
 .container .icon.moon:hover path {
     animation: animation-moon 2s linear forwards;
 }
+
 @keyframes animation-moon {
     0% {
         stroke-dashoffset: 0;
@@ -82,9 +86,11 @@ body {
     stroke-dasharray: 1810;
     stroke-dashoffset: 0;
 }
+
 .container .icon.star:hover path {
     animation: animation-star 2s linear forwards;
 }
+
 @keyframes animation-star {
     0% {
         stroke-dashoffset: 0;
@@ -110,9 +116,11 @@ multiply path
     stroke-dasharray: 1810;
     stroke-dashoffset: 0;
 }
+
 .container .icon.apple:hover path:nth-child(1) {
     animation: animation-apple 2s linear forwards;
 }
+
 @keyframes animation-apple {
     0% {
         stroke-dashoffset: 0;
@@ -134,9 +142,11 @@ multiply path
     stroke-dasharray: 1810;
     stroke-dashoffset: 1450;
 }
+
 .container .icon.apple:hover path:nth-child(2) {
     animation: animation-apple2 2s linear forwards;
 }
+
 @keyframes animation-apple2 {
     0% {
         stroke-dashoffset: 1450;

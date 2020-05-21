@@ -1,7 +1,7 @@
 window.onload = function () {
     const buttons = document.getElementsByClassName('water-ripple');
 
-    HTMLCollection.prototype.toArray=function(){
+    HTMLCollection.prototype.toArray = function () {
         return [].slice.call(this);
     };
 

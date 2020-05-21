@@ -20,7 +20,7 @@ body {
     left: calc(50% - 200px);
     width: 400px;
     height: 400px;
-    transform-style: preserve-3d;   /* 所有子元素都在3D空间中呈现 */
+    transform-style: preserve-3d; /* 所有子元素都在3D空间中呈现 */
     transform: rotateX(-18deg) rotateY(17deg) translate3d(12px, -34px, -86px); /* 控制正方听在空间形态 前两个参数控制投影，最后一个参数控制空间位置*/
 }
 
@@ -50,7 +50,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;  /*  元素的对齐方式 */
+    object-fit: cover; /*  元素的对齐方式 */
     filter: blur(0);
 }
 
@@ -67,12 +67,15 @@ body {
 .container .box > div span:nth-child(1) {
     transform: rotateX(0deg) translate3d(0, 0, 200px);
 }
+
 .container .box > div span:nth-child(2) {
     transform: rotateX(-90deg) translate3d(0, 0, -200px);
 }
+
 .container .box > div span:nth-child(2) video {
     transform: rotateX(180deg);
 }
+
 .container .box > div span:nth-child(3) {
     transform: rotateY(-90deg) translate3d(0, 0, 200px);
 }

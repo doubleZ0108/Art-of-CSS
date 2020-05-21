@@ -45,7 +45,7 @@ body {
     height: 0px;
     overflow: hidden;
     position: absolute;
-    transition: scale(1,0);
+    transition: scale(1, 0);
     top: 60px;
     width: 100%;
     text-align: center;
@@ -60,7 +60,7 @@ body {
 
 .container:hover .inner-text {
     height: 70px;
-    transition: scale(1,1);
+    transition: scale(1, 1);
 }
 
 .container:hover .text:nth-child(3) {

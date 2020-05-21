@@ -37,6 +37,7 @@ svg {
     animation: LiquidLoaderAnimation 4s ease-in-out infinite;
     animation-delay: calc(0.2s * var(--i));
 }
+
 .loader span:before {
     content: '';
     position: absolute;
@@ -67,8 +68,8 @@ svg {
     background: linear-gradient(#fce4ec, #03a9f4);
     border-radius: 20px;
     text-align: center;
-    line-height: 50px;      /* line-height和height相同可实现div中文字水平居中 */
-    transition: 0.8s cubic-bezier(0.2,0.8,0.2,1);
+    line-height: 50px; /* line-height和height相同可实现div中文字水平居中 */
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
     transform: translateY(-125px);
     filter: none;
 }

@@ -16,6 +16,7 @@ body {
 .content {
     color: #202020;
 }
+
 .text {
     font-size: 37px;
     font-weight: 500;
@@ -77,6 +78,7 @@ body {
     background-color: #09bb07;
     border-color: transparent;
 }
+
 #click:checked ~ .share-btn a:nth-child(3) i {
     bottom: 65px;
     right: 65px;
@@ -84,6 +86,7 @@ body {
     border-color: transparent;
     transition-delay: 0.2s;
 }
+
 #click:checked ~ .share-btn a:nth-child(4) i {
     bottom: 80px;
     right: 0px;
