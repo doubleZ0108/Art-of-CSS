@@ -50,6 +50,7 @@ li .text {
 .main:hover li {
     width: 10%;
 }
+
 .main li:hover {
     width: 60%;
 }
