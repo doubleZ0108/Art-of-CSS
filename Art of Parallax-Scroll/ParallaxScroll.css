@@ -12,7 +12,7 @@ body {
     width: 100vw;
     height: 100vh;
 
-    /*****/
+    /* key */
     perspective: 100px;
     transform-style: preserve-3d;
     overflow-y: auto;
@@ -41,6 +41,8 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
+
+    /* key */
     transform: translateZ(-50px) scale(2.4);
 }
 .item-image::before {
