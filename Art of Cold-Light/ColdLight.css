@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: row;
+    background-color: #000;
+    overflow: hidden;
+}
+
+button {
+    margin: 50px;
+}
+
+.cold-light {
+    position: relative;
+    height: 60px;
+    width: 200px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: #111;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.cold-light:hover {
+    z-index: 1;
+    animation: ColdLight 8s linear infinite;
+}
+
+/* first */
+.cold-light:first-child:hover {
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+}
+
+/* second */
+.cold-light:hover {
+    background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+    background-size: 400%;
+}
+
+.cold-light:before {
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.cold-light:hover:before {
+    opacity: 1;
+    z-index: -1;
+}
+
+@keyframes ColdLight {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
