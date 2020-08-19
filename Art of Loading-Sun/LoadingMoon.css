@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.LoadingMoonGroup {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(11, 14, 52);
+    z-index: 99999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.LoadingMoonGroup .moon {
+    position: relative;
+    width: 250px;
+    height: 250px;
+
+    animation: 4s MoonAnimation infinite;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.LoadingMoonGroup .cloud {
+    position: absolute;
+    top: 50%;
+    width: 300px;
+    height: 300px;
+
+    animation: 4s CloudAnimation infinite;
+    transform: translateY(-100px) translateX(-20px) rotateY(180deg);
+}
+
+.LoadingMoonGroup .text {
+    position: absolute;
+    top: 50%;
+    font-size: 15px;
+    color: rgb(255, 229, 0);
+    font-weight: 600;
+    letter-spacing:8px;
+    transform: translateY(140px);
+
+    animation: 4s TextAnimation infinite;
+    animation-delay: 0.1s;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes MoonAnimation {
+    0% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes CloudAnimation {
+    0% {
+        transform: translateY(-100px) translateX(-20px) rotateY(180deg);
+    }
+    50% {
+        transform: translateY(-100px) translateX(-10px) rotateY(180deg);
+    }
+    100% {
+        transform: translateY(-100px) translateX(-20px) rotateY(180deg);
+    }
+}
