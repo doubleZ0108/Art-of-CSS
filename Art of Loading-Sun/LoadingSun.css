@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.LoadingSunGroup {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 216, 102);
+    z-index: 99999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.LoadingSunGroup .sun {
+    position: relative;
+    width: 200px;
+    height: 200px;
+
+    animation: 4s SunAnimation infinite;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.LoadingSunGroup .eye {
+    position: absolute;
+    top: 50%;
+    width: 42px;
+    height: 12px;
+    transform: translateY(-3px);
+
+    animation: 4s EyeAnimation infinite;
+    animation-delay: 0.1s;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.LoadingSunGroup .line {
+    position: absolute;
+    top: 50%;
+    width: 359px;
+    height: 8px;
+
+    transform: translateY(35px);
+}
+
+.LoadingSunGroup .blank-block {
+    background-color: rgb(255, 216, 102);
+
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 200px;
+    transform: translateY(42px);
+}
+
+
+.LoadingSunGroup .text {
+    position: absolute;
+    top: 50%;
+    font-size: 15px;
+    color: rgb(236, 142, 22);
+    font-weight: 600;
+    letter-spacing:8px;
+    transform: translateY(55px);
+
+    animation: 4s TextAnimation infinite;
+    animation-delay: 0.1s;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes EyeAnimation {
+    0% { 
+        transform: translateY(70px) translateX(-20px);
+    }
+    35% { 
+        transform: translateY(0px) translateX(-20px);
+    }
+    37% { 
+        opacity: 1 ;
+    }
+    40% {
+        opacity: 0;
+    }
+    43% {
+        opacity: 1;
+    }
+    45% { 
+        transform: translateY(0px) translateX(-20px);
+    }
+    65% { 
+        transform: translateY(0px) translateX(20px);
+    }
+    75% {
+        transform: translateY(0px) translateX(20px);
+    }
+    100% { 
+        transform:translateY(70px) translateX(20px);
+    }
+}
+
+@keyframes SunAnimation {
+    0% { 
+        transform: translateY(70px) rotate(0deg);
+    }
+    35% { 
+        transform: translateY(0px) rotate(0deg);
+    }
+    75% {
+        transform: translateY(0px) rotate(360deg);
+    }
+    100% { 
+        transform:translateY(70px) rotate(360deg);
+    }
+}
+
+@keyframes TextAnimation {
+    0% { 
+        opacity: 0;
+    }
+    35% { 
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% { 
+        opacity: 0;
+    }
+}
