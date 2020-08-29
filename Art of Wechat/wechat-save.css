@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+  
+.container {
+    width: 80%;
+    height: auto;
+    background-color: rgb(236,237,238);
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container div {
+    width: fit-content;
+    height: fit-content;
+    max-width: 61.8%;
+    word-break: break-all;
+    border-radius: 7px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 15px;
+    color: black;
+
+    opacity: 0;
+    transform: translateY(50px);
+
+}
+
+.container div.animate {
+    animation: 1s emerge cubic-bezier(0.2,0.8,0.2,1) forwards;
+}
+
+div.yoyo {
+    background: rgb(254,255,255);
+    position: relative;
+}
+
+div.yoyo:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 12px;
+    left: -16px;
+    border: solid 8px;
+    border-color: transparent rgba(254,255,255) transparent transparent;
+    font-size: 0;
+}
+
+div.zz {
+    background: rgb(146,235,105);
+    margin: 10px 10px 10px auto;
+    position: relative;
+}
+div.zz:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 12px;
+    right: -16px;
+    border: solid 8px;
+    border-color: transparent transparent transparent rgb(146,235,105);
+    font-size: 0;
+}
+
+@keyframes emerge {
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
