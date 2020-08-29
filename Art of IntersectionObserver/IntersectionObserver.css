@@ -1,0 +1,38 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    width: 60%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 10rem 0 3rem 0;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: .1rem;
+}
+
+mark {
+    background-color: transparent;
+    color: inherit;
+    background-image: linear-gradient(#73FFA0, #73FFA0);
+    background-repeat: no-repeat;
+    background-size: 0% 38%;
+    background-position: 0 100%;
+}
+
+mark.animate {
+    animation: 2s highlight ease-in-out forwards;
+}
+
+@keyframes highlight {
+    to {
+        background-size: 100% 38%;
+    }
+}
