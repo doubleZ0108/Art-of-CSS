@@ -8,9 +8,9 @@ window.onload = function () {
             entry.target.classList.remove('animate')
           }
         })
-      })
-      
-      document.querySelectorAll('.info-group').forEach(yoyo => {
-        observer.observe(yoyo);
-      })
+    })
+    
+    document.querySelectorAll('.info-group').forEach(yoyo => {
+      observer.observe(yoyo);
+    });
 };

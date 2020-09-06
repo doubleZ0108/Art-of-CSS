@@ -55,6 +55,14 @@ body {
     height: 8.47%;
 }
 
+.WechatRecordGroup .wechat-record-container .time {
+    text-align: center;
+    font-size: 8px;
+    color: rgba(0,0,0,.3);
+    letter-spacing: 1.5px;
+    margin: 15px auto;
+}
+
 .WechatRecordGroup .wechat-record-container .info-group {
     width: fit-content;
     height: fit-content;
