@@ -9,7 +9,7 @@ body {
 }
 
 .WechatRecordGroup {
-    width: 300px;
+    width: 350px;
     position: relative;
     display: flex;
     align-items: center;
@@ -28,9 +28,9 @@ body {
     top: 20px;
     left: 3%;
     width: 94%;
-    height: 50px;
+    height: 8.47%;
     z-index: 998;
-    line-height: 70px;
+    line-height: 85px; /* 这个还没自动适配手机尺寸 300px->70px 350px->85px  400px->100px*/
     text-align: center;
 
     background-color: rgba(236,237,238, 0.8);
@@ -52,7 +52,7 @@ body {
 }
 
 .WechatRecordGroup .wechat-record-container .gap {
-    height: 50px;
+    height: 8.47%;
 }
 
 .WechatRecordGroup .wechat-record-container .info-group {
