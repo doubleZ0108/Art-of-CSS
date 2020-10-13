@@ -1,0 +1,100 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.LinkCard {
+    text-decoration: none;
+    border: none!important;
+    color: inherit!important;
+
+    position: relative;
+    display: block;
+    margin: 1em auto;
+    width: 390px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.LinkCard-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+
+    filter: blur(75px);
+    background-size: inherit;
+    background-position: 50%;
+    background-position-y: 0%;
+    transition: .8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.LinkCard:hover .LinkCard-backdrop {
+    background-position-y: 100%;
+}
+
+.LinkCard-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.LinkCard-text {
+    max-width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.LinkCard-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #121212;
+
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 1; 
+    overflow: hidden;
+    transition: .8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.LinkCard:hover .LinkCard-title {
+    color: #000000;
+}
+
+.LinkCard-meta {
+    color: #999;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: .8s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 3px;
+    align-items: center;
+}
+.LinkCard:hover .LinkCard-meta {
+    color: rgb(119, 118, 118);
+}
+
+.LinkCard-meta svg {
+    width: 20px;
+    height: 20px;
+    transition: .8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.LinkCard:hover .LinkCard-meta svg {
+    color: #000000;
+}
