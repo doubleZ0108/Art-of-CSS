@@ -1,0 +1,61 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apple-style-gallery {
+    --gallery-width-block: 8;
+    --gallery-height-block: 10;
+    --block-width: 80px;
+    --block-height: 40px;
+
+    background-color: rgb(199, 199, 199);
+    color: white;
+    min-width: calc(var(--gallery-width-block)*var(--block-width));
+    min-height: calc(var(--gallery-height-block)*var(--block-height));
+    padding: 8px;
+    border-radius: 15px;
+    text-align: center;
+
+    display: grid;
+    grid-template-areas: 
+    "  left-top      left-top      left-top        top-1        top-2         top-2       right-top     right-top"
+    "  left-top      left-top      left-top        top-1        top-2         top-2       right-top     right-top"
+    "  left-top      left-top      left-top        top-1        top-2         top-2       right-top     right-top"
+    "  left-top      left-top      left-top        top-1        top-2         top-2       right-top     right-top"
+    "    text          text          text      center-topic  center-topic     icon        right-top     right-top"
+    "left-bottom-1 left-bottom-3 left-bottom-3 center-topic  center-topic     icon        right-top     right-top"
+    "left-bottom-1 left-bottom-3 left-bottom-3    bottom        bottom     right-bottom right-bottom right-bottom"
+    "left-bottom-1 left-bottom-3 left-bottom-3    bottom        bottom     right-bottom right-bottom right-bottom"
+    "left-bottom-2 left-bottom-3 left-bottom-3    bottom        bottom     right-bottom right-bottom right-bottom"
+    "left-bottom-2 left-bottom-3 left-bottom-3    bottom        bottom     right-bottom right-bottom right-bottom";
+
+    grid-template-columns: repeat(8, var(--block-width));
+    grid-template-rows: repeat(10, var(--block-height));
+    grid-gap: 5px;
+    justify-content: center;
+
+    transition: 2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+/* .apple-style-gallery:hover {
+    display: grid;
+    grid-template-areas: 
+    "left-top left-top top-1 top-2 top-2 right-top right-top right-top"
+    "left-top left-top top-1 top-2 top-2 right-top right-top right-top"
+    "left-top left-top top-1 top-2 top-2 right-top right-top right-top"
+    "left-top left-top icon top-2 top-2 right-top right-top right-top"
+    "left-top left-top icon center-topic center-topic right-bottom right-bottom right-bottom"
+    "text text text center-topic center-topic right-bottom right-bottom right-bottom"
+    "left-bottom-1 left-bottom-3 bottom bottom bottom right-bottom right-bottom right-bottom"
+    "left-bottom-1 left-bottom-3 bottom bottom bottom right-bottom right-bottom right-bottom"
+    "left-bottom-2 left-bottom-2 bottom bottom bottom right-bottom right-bottom right-bottom"
+    "left-bottom-2 left-bottom-2 bottom bottom bottom right-bottom right-bottom right-bottom";
+} */
+
+.gallery-frame {
+    background-color: #333;
+    border-radius: 15px;
+    /* transform: scale(0.975); */
+}
