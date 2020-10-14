@@ -5,21 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art of Apple Style Gallery</title>
     <link href="AppleStyleGallery.css" rel="stylesheet" />
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
 </head>
 <body>
     <div class="apple-style-gallery">
-        <div class="gallery-frame" style="grid-area: left-top;">left-top</div>
-        <div class="gallery-frame" style="grid-area: top-1;">top-1</div>
-        <div class="gallery-frame" style="grid-area: top-2;">top-2</div>
-        <div class="gallery-frame" style="grid-area: right-top;">right-top</div>
+        <div id="left-top" class="gallery-frame" style="grid-area: left-top;">
+            <img src="https://picsum.photos/500" alt="" />
+        </div>
+        <div class="gallery-frame" style="grid-area: top-1;">
+            <img src="https://picsum.photos/500" alt="" />
+        </div>
+        <div class="gallery-frame" style="grid-area: top-2;">
+            <img src="https://picsum.photos/500" alt="" />
+        </div>
+        <div id="right-top" class="gallery-frame" style="grid-area: right-top;">
+            <div><img src="https://picsum.photos/500" alt="" /></div>
+            <div><img src="https://picsum.photos/500" alt="" /></div>
+        </div>
         <div class="gallery-frame" style="grid-area: text;">text</div>
-        <div class="gallery-frame" style="grid-area: center-topic;">center-topic</div>
-        <div class="gallery-frame" style="grid-area: icon;">icon</div>
+        <div id="center-topic" class="gallery-frame" style="grid-area: center-topic;">
+            <h1>text</h1>
+        </div>
+        <div id="icon" class="gallery-frame" style="grid-area: icon;">
+            <img src="https://picsum.photos/500" alt="" />
+        </div>
         <div class="gallery-frame" style="grid-area: left-bottom-1;">left-bottom-1</div>
-        <div class="gallery-frame" style="grid-area: left-bottom-2;">left-bottom-2</div>
+        <div class="gallery-frame" style="grid-area: left-bottom-2;">
+            <img src="https://picsum.photos/500" alt="" />
+        </div>
         <div class="gallery-frame" style="grid-area: left-bottom-3;">left-bottom-3</div>
-        <div class="gallery-frame" style="grid-area: bottom;">bottom</div>
-        <div class="gallery-frame" style="grid-area: right-bottom;">right-bottom</div>
+        <div class="gallery-frame" style="grid-area: bottom;">
+            <img src="https://picsum.photos/500" alt="" />
+        </div>
+        <div class="gallery-frame" style="grid-area: right-bottom;">
+            <img src="https://picsum.photos/500" alt="" />
+        </div>
     </div>
 </body>
+
+<script>
+    // function changeGridTemplateColumns(pattern) {
+    //     TweenMax.to(".apple-style-gallery",
+    //         1, {
+    //         gridTemplateColumns: pattern
+    //         }
+    //     );
+    // }
+
+    // function changeGridTemplateRows(pattern) {
+    //     TweenMax.to(".apple-style-gallery",
+    //         1, {
+    //         gridTemplateRows: pattern
+    //         }
+    //     );
+    // }
+
+    // $("#left-top").mouseenter(()=>{
+    //     console.log("left-top");
+    //     changeGridTemplateColumns("1fr 1fr 1fr 1fr");
+    // });
+
+    // $("#left-top").mouseleave(()=>{
+    //     // $(".apple-style-gallery").css(
+    //     //     "grid-template-columns", "1fr 1fr 1fr 1fr"
+    //     // );
+    //     changeGridTemplateColumns("0.2fr 1fr 1fr 1fr")
+    // });
+
+
+</script>
 </html>
