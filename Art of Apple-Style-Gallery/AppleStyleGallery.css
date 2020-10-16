@@ -80,6 +80,10 @@ body {
     width: 100%;
     height: 100%;
     object-fit:cover;
+    transition: .8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.gallery-frame:hover img {
+    transform: scale(1.15);
 }
 
 #center-topic {
@@ -88,8 +92,12 @@ body {
     align-items: center;
     justify-content: center;
 }
+#center-topic:hover {
+    transform: scale(2);
+}
 
 #center-topic h1 {
+    margin: 0;
     font-size: 2.5em;
     font-weight: 500;
 }
@@ -118,9 +126,8 @@ body {
 }
 
 #icon {
-    display: grid;
+    display: flex;
     overflow: hidden;
-    grid-template-rows: 2.5fr 1fr;
     align-items: center;
     justify-content: center;
 }
@@ -133,25 +140,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    text-overflow: -o-ellipsis-lastline;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    line-clamp: 1;
-    -webkit-box-orient: vertical;
 }
 #icon div img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     object-fit:cover;
     overflow: hidden;
     border-radius: 50%;
-}
-#icon div p {
-    margin: 0;
-    margin-bottom: 10px;
 }
 
 #text {
@@ -160,6 +155,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: .8s cubic-bezier(.2,.8,.2,1);
 }
 #text div p {
     margin: 0;
