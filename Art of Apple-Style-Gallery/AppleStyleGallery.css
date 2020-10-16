@@ -15,14 +15,14 @@ body {
 .apple-style-gallery {
     --gallery-width-block: 8;
     --gallery-height-block: 10;
-    --block-width: 80px;
-    --block-height: 40px;
+    --block-width: 120px;
+    --block-height: 60px;
 
     background-color: rgb(0, 0, 0);
     color: white;
     width: calc(var(--gallery-width-block)*var(--block-width));
     height: calc(var(--gallery-height-block)*var(--block-height));
-    padding: 8px;
+    padding: 10px;
     border-radius: 15px;
     text-align: center;
 
@@ -142,8 +142,8 @@ body {
     justify-content: center;
 }
 #icon div img {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     object-fit:cover;
     overflow: hidden;
     border-radius: 50%;
@@ -184,9 +184,12 @@ body {
     justify-content: center;
 }
 #left-bottom-1 div img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
+}
+#left-bottom-1:hover div img {
+    transform: scale(1);
 }
 
 #left-bottom-3 {
