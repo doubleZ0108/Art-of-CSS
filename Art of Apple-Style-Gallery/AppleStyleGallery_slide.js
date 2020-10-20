@@ -14,9 +14,7 @@ window.onload = function(){
             rate = counter - 1;
             noMoreCallBack("right-arrow");
         }
-        document.querySelectorAll(".apple-style-gallery").forEach((gallery)=>{
-            gallery.style.transform = "translateX(calc("+ rate*-100 +"% - " + (outterPadding*2*rate - innerPadding*2*rate - outterPadding)+ "px))";
-        });
+        galleryTransformCallBack();
     });
 
     document.getElementById("left-arrow").addEventListener("click", ()=>{
@@ -25,16 +23,25 @@ window.onload = function(){
             rate = 0;
             noMoreCallBack("left-arrow");
         }
-        document.querySelectorAll(".apple-style-gallery").forEach((gallery)=>{
-            gallery.style.transform = "translateX(calc("+ rate*-100 +"% - " + (outterPadding*2*rate - innerPadding*2*rate - outterPadding)+ "px))";
-        });
+        galleryTransformCallBack();
     });
+
+    setInterval(()=>{
+        rate = (rate + 1) % counter;
+        galleryTransformCallBack();
+    }, 3000);
 
     function noMoreCallBack(id){
         var arrow = document.getElementById(id);
         arrow.style.animation = "noMoreAnimation 1s";
         arrow.addEventListener("animationend", () => {
             arrow.style.animation = "";
+        });
+    }
+
+    function galleryTransformCallBack(){
+        document.querySelectorAll(".apple-style-gallery").forEach((gallery)=>{
+            gallery.style.transform = "translateX(calc("+ rate*-100 +"% - " + (outterPadding*2*rate - innerPadding*2*rate - outterPadding)+ "px))";
         });
     }
 };
