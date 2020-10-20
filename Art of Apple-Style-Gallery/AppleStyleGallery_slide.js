@@ -1,15 +1,13 @@
 window.onload = function(){
     let counter = 0;
     document.querySelectorAll(".apple-style-gallery").forEach((gallery, index) => {
-        if(index != 0){
-            gallery.style.left = index*100 + "%";
-        }
+        gallery.style.left = index*100 + "%";
         ++counter;
     });
 
 
     let rate = 0;
-    let paddingNow = 10;
+    let outterPadding = 80, innerPadding=10;
     document.getElementById("right-arrow").addEventListener("click", ()=>{
         rate += 1;
         if(rate == counter){
@@ -17,11 +15,7 @@ window.onload = function(){
             noMoreCallBack("right-arrow");
         }
         document.querySelectorAll(".apple-style-gallery").forEach((gallery)=>{
-            if(rate == 0){
-                gallery.style.transform = "translateX(0px)";
-            } else {
-                gallery.style.transform = "translateX(calc("+ rate*-100 +"% - " + (rate*2*paddingNow-paddingNow) + "px))";
-            }
+            gallery.style.transform = "translateX(calc("+ rate*-100 +"% - " + (outterPadding*2*rate - innerPadding*2*rate - outterPadding)+ "px))";
         });
     });
 
@@ -32,11 +26,7 @@ window.onload = function(){
             noMoreCallBack("left-arrow");
         }
         document.querySelectorAll(".apple-style-gallery").forEach((gallery)=>{
-            if(rate == 0){
-                gallery.style.transform = "translateX(0px)";
-            } else {
-                gallery.style.transform = "translateX(calc("+ rate*-100 +"% - " + (rate*2*paddingNow-paddingNow) + "px))";
-            }
+            gallery.style.transform = "translateX(calc("+ rate*-100 +"% - " + (outterPadding*2*rate - innerPadding*2*rate - outterPadding)+ "px))";
         });
     });
 

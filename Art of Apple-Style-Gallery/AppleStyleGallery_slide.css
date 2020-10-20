@@ -11,65 +11,6 @@ body {
     justify-content: center;
 }
 
-
-.arrow {
-    --arrow-radius: 75px;
-    align-self: center;
-    justify-self: center;
-    background: rgba(0, 0, 0, 0.2);
-    min-height: var(--arrow-radius);
-    min-width: var(--arrow-radius);
-    margin: 10px;
-    font-size: 30px;
-    line-height: var(--arrow-radius);
-    text-align: center;
-    color: rgba(255,255,255,0.6);
-    border-radius: 50%;
-    transition: .8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    user-select: none;
-}
-
-.arrow:hover {
-    background: rgba(0, 0, 0, 0.4);
-    color: rgba(255,255,255,0.8);
-    cursor: pointer;
-    animation: rubberBandAnimation 1s;
-}
-
-@keyframes rubberBandAnimation {
-    0% {
-        transform: scale3d(1, 1, 1);
-    }
-    35% {
-        transform: scale3d(1.25, .75, 1);
-    }
-    45% {
-        transform: scale3d(.75, 1, 1);
-    }
-    60% {
-        transform: scale3d(1.2, .8, 1);
-    }
-    75% {
-        transform: scale3d(1.05, .95, 1);
-    }
-    100% {
-        transform: scale3d(1, 1, 1);
-    }
-}
-
-@keyframes noMoreAnimation {
-    0% {
-        background: rgba(0, 0, 0, 0.2);
-    }
-    50% { 
-        background: #4a54bc;
-    }
-    100% {
-        background: rgba(0, 0, 0, 0.2);
-    }
-}
-
-
 .gallery-container {
     --gallery-width-block: 8;
     --gallery-height-block: 10;
@@ -77,33 +18,30 @@ body {
     --block-height: 60px;
 
     position: relative;
-    background-color: rgb(0, 0, 0);
     color: white;
-    border-radius: 15px;
 
     width: calc(var(--gallery-width-block)*var(--block-width));
     height: calc(var(--gallery-height-block)*var(--block-height));
     margin: 0;
-    padding: 10px;
+    padding: 80px;
     overflow: hidden;
 }
 
 .apple-style-gallery {
     width: inherit;
     height: inherit;
+    height: inherit;
     position: absolute;
-    top: 10px;
-    left: 10px;
-    transition: .5s transform ease-in-out;
-}
-/* 
-.apple-style-gallery:nth-of-type(2){
-    left: 100%;
-}
 
-.apple-style-gallery:nth-of-type(3){
-    left: 200%;
-} */
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 15px;
+
+    top: 80px;
+    left: 80px;
+    transition: .5s transform ease-in-out;
+    transform: translateX(80px);
+}
 
 .apple-style-gallery {
     background-color: rgb(0, 0, 0);
@@ -293,4 +231,75 @@ body {
 .left-bottom-3 div p {
     margin: 0;
     margin-bottom: 10px;
+}
+
+
+.arrow {
+    --arrow-radius: 75px;
+    align-self: center;
+    justify-self: center;
+    background: rgba(0, 0, 0, 0.2);
+    min-height: var(--arrow-radius);
+    min-width: var(--arrow-radius);
+    margin: 10px;
+    font-size: 30px;
+    line-height: var(--arrow-radius);
+    text-align: center;
+    color: rgba(255,255,255,0.6);
+    border-radius: 50%;
+    transition: .8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    user-select: none;
+
+    z-index: 99;
+    position: absolute;
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.4);
+    color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    animation: rubberBandAnimation 1s;
+}
+
+.arrow.left {
+    top: 50%;
+    left: 5%;
+}
+
+.arrow.right {
+    top: 50%;
+    right: 5%;
+}
+
+@keyframes rubberBandAnimation {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    35% {
+        transform: scale3d(1.25, .75, 1);
+    }
+    45% {
+        transform: scale3d(.75, 1, 1);
+    }
+    60% {
+        transform: scale3d(1.2, .8, 1);
+    }
+    75% {
+        transform: scale3d(1.05, .95, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes noMoreAnimation {
+    0% {
+        background: rgba(0, 0, 0, 0.2);
+    }
+    50% { 
+        background: #4a54bc;
+    }
+    100% {
+        background: rgba(0, 0, 0, 0.2);
+    }
 }
