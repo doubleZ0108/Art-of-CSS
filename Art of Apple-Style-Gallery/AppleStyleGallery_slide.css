@@ -14,8 +14,9 @@ body {
 .gallery-container {
     --gallery-width-block: 8;
     --gallery-height-block: 10;
-    --block-width: 120px;
-    --block-height: 60px;
+    --block-width: 144px;
+    --block-height: 72px;
+    --gallery-border-radius: 20px;
 
     position: relative;
     color: white;
@@ -30,16 +31,15 @@ body {
 .apple-style-gallery {
     width: inherit;
     height: inherit;
-    height: inherit;
     position: absolute;
 
     background-color: rgb(0, 0, 0);
     padding: 10px;
-    border-radius: 15px;
+    border-radius: calc(1.5*var(--gallery-border-radius));
 
     top: 80px;
     left: 80px;
-    transition: .5s transform ease-in-out;
+    transition: 2s transform ease-in-out;
     transform: translateX(80px);
 }
 
@@ -64,13 +64,14 @@ body {
     grid-gap: 5px;
     justify-content: center;
 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+
     transition: 2s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .gallery-frame {
     background-color: rgba(38, 38, 38, 0.9);
-    border-radius: 15px;
-    /* transform: scale(0.975); */
+    border-radius: var(--gallery-border-radius);
     transition: .8s cubic-bezier(0.2, 0.8, 0.2, 1);
     overflow: hidden;
 }
@@ -131,7 +132,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: var(--gallery-border-radius);
 }
 
 .icon {
@@ -263,12 +264,12 @@ body {
 
 .arrow.left {
     top: 50%;
-    left: 5%;
+    left: 2%;
 }
 
 .arrow.right {
     top: 50%;
-    right: 5%;
+    right: 1%;
 }
 
 @keyframes rubberBandAnimation {

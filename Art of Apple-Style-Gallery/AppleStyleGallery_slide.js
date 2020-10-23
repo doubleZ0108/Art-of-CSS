@@ -8,28 +8,29 @@ window.onload = function(){
 
     let rate = 0;
     let outterPadding = 80, innerPadding=10;
-    document.getElementById("right-arrow").addEventListener("click", ()=>{
+    document.getElementById("gallery-right-arrow").addEventListener("click", ()=>{
         rate += 1;
         if(rate == counter){
             rate = counter - 1;
-            noMoreCallBack("right-arrow");
+            noMoreCallBack("gallery-right-arrow");
         }
         galleryTransformCallBack();
     });
 
-    document.getElementById("left-arrow").addEventListener("click", ()=>{
+    document.getElementById("gallery-left-arrow").addEventListener("click", ()=>{
         rate -= 1;
         if(rate < 0) {
             rate = 0;
-            noMoreCallBack("left-arrow");
+            noMoreCallBack("gallery-left-arrow");
         }
         galleryTransformCallBack();
     });
 
+    let slideUpdateTimeInterval = 10000;
     setInterval(()=>{
         rate = (rate + 1) % counter;
         galleryTransformCallBack();
-    }, 3000);
+    }, slideUpdateTimeInterval);
 
     function noMoreCallBack(id){
         var arrow = document.getElementById(id);
