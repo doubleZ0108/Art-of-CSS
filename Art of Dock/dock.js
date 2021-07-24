@@ -1,6 +1,7 @@
 window.onload = function () {
     document.querySelectorAll('.dock li').forEach(li => {
         li.addEventListener('mousemove', e => {
+            console.log(e.target.tagName)
             let item = e.target
             let itemRect = item.getBoundingClientRect()
             
