@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wave-container {
+  background: linear-gradient(189.16deg, rgb(67, 22, 219) 13.57%, rgb(144, 118, 231) 98.38%);
+  height: 890px;
+  position: relative;
+  overflow: hidden;
+}
+
+.wave-wrapper {
+  position: relative;
+  top: -130px;
+}
+
+.wave-1-layer {
+  position: absolute;
+  width: 100%;
+  /* background-position: center top; */
+  background-position: 25% 0%;
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  top: 137px;
+  height: 900px;
+}
+
+.wave-2-layer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 800px;
+  backdrop-filter: blur(60px);
+}
+
+.wave-3-layer {
+  position: absolute;
+  width: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 180%;
+  top: 400px;
+  left: 0px;
+  height: 600px;
+}
+
+.wave-4-layer {
+  /* background: linear-gradient(rgba(190, 255, 255, 0.25) -18.72%, rgb(242, 246, 255) 37.6%); */
+  background: linear-gradient(rgba(31, 31, 71, 0.25) -18.72%, rgb(31, 31, 71) 37.6%);
+  position: absolute;
+  width: 100%;
+  top: 520px;
+  height: 500px;
+  clip-path: url(#clip);
+  transform-origin: left top;
+}
