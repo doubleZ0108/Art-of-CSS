@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.gradient-wrap {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gradient-wrap img {
+    max-width: 80%;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
