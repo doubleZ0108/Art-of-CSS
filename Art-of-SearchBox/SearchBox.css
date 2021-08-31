@@ -48,6 +48,7 @@ body {
     line-height: 100px;
     font-size: 30px;
     transition: .5s;
+    transition: opacity 0.0s;
 }
 
 .SearchBox input:focus {
@@ -60,7 +61,7 @@ body {
     width: auto;
     border-radius: 0;
     height: 5px;
-    transform: translate(0, 50px);
+    transform: translate(0, 10px);
 }
 
 .SearchBox input:focus + .icon:before {
