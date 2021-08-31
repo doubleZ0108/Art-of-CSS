@@ -47,6 +47,9 @@ body {
     text-align: center;
     margin: 10px auto;
 }
+.overlay .content a:hover {
+    border: 1px solid rgba(255, 255, 255, 0.9);
+}
 
 .overlay .close {
     position: absolute;

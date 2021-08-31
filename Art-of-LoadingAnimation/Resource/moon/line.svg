@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="718px" height="16px" viewBox="0 0 718 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>未命名</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.992157 0 0 0 0 0.976471 0 0 0 0 0.796078 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <rect x="0" y="0" width="718" height="16" id="rect-2"></rect>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g filter="url(#filter-1)" id="line">
+            <g id="image0">
+                <image x="0" y="0" width="718" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAs4AAAAQCAYAAAAGR/laAAAABGdBTUEAALGOfPtRkwAAAGxlWElmTU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAABAAAARgEoAAMAAAABAAIAAIdpAAQAAAABAAAATgAAAAAAAACQAAAAAQAAAJAAAAABAAKgAgAEAAAAAQAAAs6gAwAEAAAAAQAAABAAAAAA6hQ8gAAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAShJREFUeAHt1jsNgEAURNFdVIAUTGFhsYArnBBU8An9ZnoOFQnTcPKKW8vzHNu4lnq1991DgAABAgQIECBA4IcC+7Scc++/h95H3wgQIECAAAECBAgQ+ASEs0sgQIAAAQIECBAgEAgI5wDJhAABAgQIECBAgIBwdgMECBAgQIAAAQIEAgHhHCCZECBAgAABAgQIEBDOboAAAQIECBAgQIBAICCcAyQTAgQIECBAgAABAsLZDRAgQIAAAQIECBAIBIRzgGRCgAABAgQIECBAQDi7AQIECBAgQIAAAQKBgHAOkEwIECBAgAABAgQICGc3QIAAAQIECBAgQCAQEM4BkgkBAgQIECBAgAAB4ewGCBAgQIAAAQIECAQCwjlAMiFAgAABAgQIECBwA1MaBiDT6wmEAAAAAElFTkSuQmCC"></image>
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#rect-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>
