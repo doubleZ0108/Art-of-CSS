@@ -33,7 +33,7 @@
 - [x] [分享按钮艺术](https://doublez0108.github.io/Art-of-CSS/Art-of-SocialMediaIcon/SocialMediaIcon.html) | [Art of Social Media Icon](https://doublez0108.github.io/Art-of-CSS/Art-of-SocialMediaIcon/SocialMediaIcon.html)
 - [x] [被分割的文字艺术](https://doublez0108.github.io/Art-of-CSS/Art-of-SplitWord/SplitWord.html) | [Art of Split Word](https://doublez0108.github.io/Art-of-CSS/Art-of-SplitWord/SplitWord.html)
 - [x] [聚光灯艺术](https://doublez0108.github.io/Art-of-CSS/Art-of-Spotlight/spotlight.html) | [Art of Spotlight](https://doublez0108.github.io/Art-of-CSS/Art-of-Spotlight/spotlight.html)
-- [ ] [打字机艺术](https://doublez0108.github.io/Art-of-CSS/Art-of-Typing/typing.html) | [Art of Typing](https://doublez0108.github.io/Art-of-CSS/Art-of-Typing/typing.html)
+- [x] [打字机艺术](https://doublez0108.github.io/Art-of-CSS/Art-of-Typing/typing.html) | [Art of Typing](https://doublez0108.github.io/Art-of-CSS/Art-of-Typing/typing.html)
 - [x] [瀑布布局艺术](https://doublez0108.github.io/Art-of-CSS/Art-of-WaterFallLayout/WaterFallLayout.html) | [Art of Water Fall Layout](https://doublez0108.github.io/Art-of-CSS/Art-of-WaterFallLayout/WaterFallLayout.html)
 - [x] [涟漪按钮艺术](https://doublez0108.github.io/Art-of-CSS/Art-of-WaterRippleButton/WaterRippleButton.html) | [Art of Water Ripple Button](https://doublez0108.github.io/Art-of-CSS/Art-of-WaterRippleButton/WaterRippleButton.html)
 - [ ] [微信聊天页面仿写](https://doublez0108.github.io/Art-of-CSS/Art-of-WeChat/wechat.html) | [Art of WeChat](https://doublez0108.github.io/Art-of-CSS/Art-of-WeChat/wechat.html)
